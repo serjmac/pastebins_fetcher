@@ -31,9 +31,13 @@ Run the project on a host with PHP and Composer
 
 -   Execute 'php artisan migrate' to seed the database/database.sqlite file with the required tables.
 
+-   Execute 'php artisan key:generate' to generate the APP_KEY value
+
 -   Create a task like Cron or [Windows scheduled task](resources/docs/schedule_task_windows.md) to run the command 'php artisan fetch:pastebins' which will launch the process
 
 -   If troubleshooting, check console errors or table pastebin_errors with a sqlite manager like [DB Browser for SQLite](https://sqlitebrowser.org)
+
+-   If want to access web routes, serve the project in a web server or host live dev server with 'php artisan serve' command. See routes in routes/web.php file. This feature is minimal in this initial project stage
 
 ## This project was built in Laravel Framework
 
